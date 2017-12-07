@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_PeiZaiFaHuoFenBao_Update" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update.SVC?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update.SVC?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update.SVC?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_PeiZaiFaHuoFenBao_Update_FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PeiZaiFaHuoFenBao_Update_FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PeiZaiFaHuoFenBao_Update_dgvMingXi_SelectionChanged_SelectFenBao_InputMessage">
+    <wsdl:part name="parameters" element="tns:dgvMingXi_SelectionChanged_SelectFenBao" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PeiZaiFaHuoFenBao_Update_dgvMingXi_SelectionChanged_SelectFenBao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dgvMingXi_SelectionChanged_SelectFenBaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PeiZaiFaHuoFenBao_Update_btnBaoCun_Update_Click_DeleteOldFenBao_InputMessage">
+    <wsdl:part name="parameters" element="tns:btnBaoCun_Update_Click_DeleteOldFenBao" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PeiZaiFaHuoFenBao_Update_btnBaoCun_Update_Click_DeleteOldFenBao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btnBaoCun_Update_Click_DeleteOldFenBaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PeiZaiFaHuoFenBao_Update_btnBaoCun_Update_Click_InsertNewFenBao_InputMessage">
+    <wsdl:part name="parameters" element="tns:btnBaoCun_Update_Click_InsertNewFenBao" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PeiZaiFaHuoFenBao_Update_btnBaoCun_Update_Click_InsertNewFenBao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btnBaoCun_Update_Click_InsertNewFenBaoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_PeiZaiFaHuoFenBao_Update">
+    <wsdl:operation name="FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXi" message="tns:FRM_PeiZaiFaHuoFenBao_Update_FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXiResponse" message="tns:FRM_PeiZaiFaHuoFenBao_Update_FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dgvMingXi_SelectionChanged_SelectFenBao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/dgvMingXi_SelectionChanged_SelectFenBao" message="tns:FRM_PeiZaiFaHuoFenBao_Update_dgvMingXi_SelectionChanged_SelectFenBao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/dgvMingXi_SelectionChanged_SelectFenBaoResponse" message="tns:FRM_PeiZaiFaHuoFenBao_Update_dgvMingXi_SelectionChanged_SelectFenBao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btnBaoCun_Update_Click_DeleteOldFenBao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/btnBaoCun_Update_Click_DeleteOldFenBao" message="tns:FRM_PeiZaiFaHuoFenBao_Update_btnBaoCun_Update_Click_DeleteOldFenBao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/btnBaoCun_Update_Click_DeleteOldFenBaoResponse" message="tns:FRM_PeiZaiFaHuoFenBao_Update_btnBaoCun_Update_Click_DeleteOldFenBao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btnBaoCun_Update_Click_InsertNewFenBao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/btnBaoCun_Update_Click_InsertNewFenBao" message="tns:FRM_PeiZaiFaHuoFenBao_Update_btnBaoCun_Update_Click_InsertNewFenBao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/btnBaoCun_Update_Click_InsertNewFenBaoResponse" message="tns:FRM_PeiZaiFaHuoFenBao_Update_btnBaoCun_Update_Click_InsertNewFenBao_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update" type="tns:FRM_PeiZaiFaHuoFenBao_Update">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/FRM_PeiZaiFaHuoFenBao_Update_Load_SelectDingDanMingXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dgvMingXi_SelectionChanged_SelectFenBao">
+      <soap:operation soapAction="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/dgvMingXi_SelectionChanged_SelectFenBao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnBaoCun_Update_Click_DeleteOldFenBao">
+      <soap:operation soapAction="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/btnBaoCun_Update_Click_DeleteOldFenBao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnBaoCun_Update_Click_InsertNewFenBao">
+      <soap:operation soapAction="http://tempuri.org/FRM_PeiZaiFaHuoFenBao_Update/btnBaoCun_Update_Click_InsertNewFenBao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_PeiZaiFaHuoFenBao_Update">
+    <wsdl:port name="BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update" binding="tns:BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update">
+      <soap:address location="http://localhost:9998/BLL%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.%E9%85%8D%E8%BD%BD%E5%8F%91%E8%B4%A7.FRM_PeiZaiFaHuoFenBao_Update.SVC" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;BasicHttpBinding_DingDanGuanLi&quot; /&gt;" bindingType="basicHttpBinding" name="BasicHttpBinding_DingDanGuanLi" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://localhost:9998/BLL%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.%E8%AE%A2%E5%8D%95%E7%AE%A1%E7%90%86.DingDanGuanLi.svc&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;BasicHttpBinding_DingDanGuanLi&quot; contract=&quot;BLL物流管理系统.订单管理.DingDanGuanLi.DingDanGuanLi&quot; name=&quot;BasicHttpBinding_DingDanGuanLi&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://localhost:9998/BLL%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.%E8%AE%A2%E5%8D%95%E7%AE%A1%E7%90%86.DingDanGuanLi.svc&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;BasicHttpBinding_DingDanGuanLi&quot; contract=&quot;BLL物流管理系统.订单管理.DingDanGuanLi.DingDanGuanLi&quot; name=&quot;BasicHttpBinding_DingDanGuanLi&quot; /&gt;" contractName="BLL物流管理系统.订单管理.DingDanGuanLi.DingDanGuanLi" name="BasicHttpBinding_DingDanGuanLi" />
+  </endpoints>
+</configurationSnapshot>

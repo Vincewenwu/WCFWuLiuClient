@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="FRM_SiJiGuanLi_Load_Update_ChaXunZhunJiaCheXin">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_SiJiGuanLi_Load_Update_ChaXunZhunJiaCheXinResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_SiJiGuanLi_Load_Update_ChaXunZhunJiaCheXinResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnQueDing_Click_XiuGaiSiJi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="司机名称" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="出生日期" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="联系电话" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="联系地址" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="身份证号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="驾驶证号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="备注" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="机构组织ID" type="xs:int" />
+        <xs:element minOccurs="0" name="准驾车型ID" type="xs:int" />
+        <xs:element minOccurs="0" name="是否离职" type="xs:boolean" />
+        <xs:element minOccurs="0" name="司机ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnQueDing_Click_XiuGaiSiJiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btnQueDing_Click_XiuGaiSiJiResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

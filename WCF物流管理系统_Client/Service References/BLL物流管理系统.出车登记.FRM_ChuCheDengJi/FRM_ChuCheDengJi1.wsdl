@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_ChuCheDengJi" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.出车登记.FRM_ChuCheDengJi.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.出车登记.FRM_ChuCheDengJi.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.出车登记.FRM_ChuCheDengJi.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_ChuCheDengJi_myPictureBox_Click_ChaXunFenBao_InputMessage">
+    <wsdl:part name="parameters" element="tns:myPictureBox_Click_ChaXunFenBao" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_myPictureBox_Click_ChaXunFenBao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:myPictureBox_Click_ChaXunFenBaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiang_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiang" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiangResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunCheLiang_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_Load_ChaXunCheLiang" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunCheLiang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_Load_ChaXunCheLiangResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_pb_MouseClick_ChaXunMingXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:pb_MouseClick_ChaXunMingXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_pb_MouseClick_ChaXunMingXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pb_MouseClick_ChaXunMingXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunWangDian_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_Load_ChaXunWangDian" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunWangDian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_Load_ChaXunWangDianResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunZhuangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_Load_ChaXunZhuangTai" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunZhuangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_Load_ChaXunZhuangTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuChe_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuChe" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuChe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuCheResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTai" />
+  </wsdl:message>
+  <wsdl:message name="FRM_ChuCheDengJi_FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTaiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_ChuCheDengJi">
+    <wsdl:operation name="myPictureBox_Click_ChaXunFenBao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/myPictureBox_Click_ChaXunFenBao" message="tns:FRM_ChuCheDengJi_myPictureBox_Click_ChaXunFenBao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/myPictureBox_Click_ChaXunFenBaoResponse" message="tns:FRM_ChuCheDengJi_myPictureBox_Click_ChaXunFenBao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiang">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiang" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiangResponse" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_Load_ChaXunCheLiang">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunCheLiang" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunCheLiang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunCheLiangResponse" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunCheLiang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pb_MouseClick_ChaXunMingXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/pb_MouseClick_ChaXunMingXi" message="tns:FRM_ChuCheDengJi_pb_MouseClick_ChaXunMingXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/pb_MouseClick_ChaXunMingXiResponse" message="tns:FRM_ChuCheDengJi_pb_MouseClick_ChaXunMingXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_Load_ChaXunWangDian">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunWangDian" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunWangDian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunWangDianResponse" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunWangDian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_Load_ChaXunZhuangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunZhuangTai" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunZhuangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunZhuangTaiResponse" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_Load_ChaXunZhuangTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuChe">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuChe" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuChe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuCheResponse" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuChe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTai" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTaiResponse" message="tns:FRM_ChuCheDengJi_FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTai_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL物流管理系统.出车登记.FRM_ChuCheDengJi" type="tns:FRM_ChuCheDengJi">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="myPictureBox_Click_ChaXunFenBao">
+      <soap:operation soapAction="http://tempuri.org/FRM_ChuCheDengJi/myPictureBox_Click_ChaXunFenBao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiang">
+      <soap:operation soapAction="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunQuanBuCheLiang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_Load_ChaXunCheLiang">
+      <soap:operation soapAction="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunCheLiang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pb_MouseClick_ChaXunMingXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_ChuCheDengJi/pb_MouseClick_ChaXunMingXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_Load_ChaXunWangDian">
+      <soap:operation soapAction="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunWangDian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_Load_ChaXunZhuangTai">
+      <soap:operation soapAction="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_Load_ChaXunZhuangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuChe">
+      <soap:operation soapAction="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_tsbChuChe_Click_UpdateChuChe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTai">
+      <soap:operation soapAction="http://tempuri.org/FRM_ChuCheDengJi/FRM_ChuCheDengJi_IDChaXunCheLiangZhuangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_ChuCheDengJi">
+    <wsdl:port name="BLL物流管理系统.出车登记.FRM_ChuCheDengJi" binding="tns:BLL物流管理系统.出车登记.FRM_ChuCheDengJi">
+      <soap:address location="http://localhost:9998/BLL%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.%E5%87%BA%E8%BD%A6%E7%99%BB%E8%AE%B0.FRM_ChuCheDengJi.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

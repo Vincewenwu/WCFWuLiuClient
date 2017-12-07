@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="af61afb7-72aa-483e-99b9-068df1d9ada4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9998/BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL物流管理系统3.xsd" MetadataType="Schema" ID="7d14a9b3-6e28-4d10-b4b6-5bd395f66f6f" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update.svc?xsd=xsd2" />
+    <MetadataFile FileName="FRM_XianLuGuanLi_Update1.wsdl" MetadataType="Wsdl" ID="a450fa09-b526-4189-8d7a-3e8164e5d1bd" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update.svc?wsdl" />
+    <MetadataFile FileName="BLL物流管理系统1.disco" MetadataType="Disco" ID="12df4236-8910-4b9e-9602-bd3148bf6531" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update.svc?disco" />
+    <MetadataFile FileName="BLL物流管理系统31.xsd" MetadataType="Schema" ID="a8737747-1da5-45b4-8717-e3fb386b2eb6" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL物流管理系统32.xsd" MetadataType="Schema" ID="13e5e1bb-786b-4f4e-b33e-61df93f9ec7e" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

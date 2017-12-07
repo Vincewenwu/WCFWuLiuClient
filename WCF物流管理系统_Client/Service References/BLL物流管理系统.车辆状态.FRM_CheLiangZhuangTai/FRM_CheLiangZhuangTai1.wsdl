@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_CheLiangZhuangTai" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_CheLiangZhuangTai_tsbShanChu_Delete_Click_ShanChuCheLiang_InputMessage">
+    <wsdl:part name="parameters" element="tns:tsbShanChu_Delete_Click_ShanChuCheLiang" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_tsbShanChu_Delete_Click_ShanChuCheLiang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tsbShanChu_Delete_Click_ShanChuCheLiangResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiang_InputMessage">
+    <wsdl:part name="parameters" element="tns:btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiang" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiangResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiang_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiang" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiangResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunWangDian_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_CheLiangZhuangTai_Load_ChaXunWangDian" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunWangDian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_CheLiangZhuangTai_Load_ChaXunWangDianResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunZhuangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_CheLiangZhuangTai_Load_ChaXunZhuangTai" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunZhuangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_CheLiangZhuangTai_Load_ChaXunZhuangTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_ToolStripMenuItem_Click_XiuGaiZhuangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:ToolStripMenuItem_Click_XiuGaiZhuangTai" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangZhuangTai_ToolStripMenuItem_Click_XiuGaiZhuangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ToolStripMenuItem_Click_XiuGaiZhuangTaiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_CheLiangZhuangTai">
+    <wsdl:operation name="tsbShanChu_Delete_Click_ShanChuCheLiang">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/tsbShanChu_Delete_Click_ShanChuCheLiang" message="tns:FRM_CheLiangZhuangTai_tsbShanChu_Delete_Click_ShanChuCheLiang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/tsbShanChu_Delete_Click_ShanChuCheLiangResponse" message="tns:FRM_CheLiangZhuangTai_tsbShanChu_Delete_Click_ShanChuCheLiang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiang">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiang" message="tns:FRM_CheLiangZhuangTai_btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiangResponse" message="tns:FRM_CheLiangZhuangTai_btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiang">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiang" message="tns:FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiangResponse" message="tns:FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FRM_CheLiangZhuangTai_Load_ChaXunWangDian">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/FRM_CheLiangZhuangTai_Load_ChaXunWangDian" message="tns:FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunWangDian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/FRM_CheLiangZhuangTai_Load_ChaXunWangDianResponse" message="tns:FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunWangDian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FRM_CheLiangZhuangTai_Load_ChaXunZhuangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/FRM_CheLiangZhuangTai_Load_ChaXunZhuangTai" message="tns:FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunZhuangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/FRM_CheLiangZhuangTai_Load_ChaXunZhuangTaiResponse" message="tns:FRM_CheLiangZhuangTai_FRM_CheLiangZhuangTai_Load_ChaXunZhuangTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ToolStripMenuItem_Click_XiuGaiZhuangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/ToolStripMenuItem_Click_XiuGaiZhuangTai" message="tns:FRM_CheLiangZhuangTai_ToolStripMenuItem_Click_XiuGaiZhuangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangZhuangTai/ToolStripMenuItem_Click_XiuGaiZhuangTaiResponse" message="tns:FRM_CheLiangZhuangTai_ToolStripMenuItem_Click_XiuGaiZhuangTai_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai" type="tns:FRM_CheLiangZhuangTai">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="tsbShanChu_Delete_Click_ShanChuCheLiang">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangZhuangTai/tsbShanChu_Delete_Click_ShanChuCheLiang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiang">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangZhuangTai/btnChaXun_Select_Click_DuoTiaoJianChaXunCheLiang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiang">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangZhuangTai/FRM_CheLiangZhuangTai_Load_ChaXunQuanBuCheLiang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FRM_CheLiangZhuangTai_Load_ChaXunWangDian">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangZhuangTai/FRM_CheLiangZhuangTai_Load_ChaXunWangDian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FRM_CheLiangZhuangTai_Load_ChaXunZhuangTai">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangZhuangTai/FRM_CheLiangZhuangTai_Load_ChaXunZhuangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ToolStripMenuItem_Click_XiuGaiZhuangTai">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangZhuangTai/ToolStripMenuItem_Click_XiuGaiZhuangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_CheLiangZhuangTai">
+    <wsdl:port name="BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai" binding="tns:BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai">
+      <soap:address location="http://localhost:9998/BLL%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.%E8%BD%A6%E8%BE%86%E7%8A%B6%E6%80%81.FRM_CheLiangZhuangTai.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

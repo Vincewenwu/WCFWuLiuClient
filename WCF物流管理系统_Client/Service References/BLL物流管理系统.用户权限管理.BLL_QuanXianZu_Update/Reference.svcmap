@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1cecabee-7c52-4179-b039-05a446e5f223" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL_QuanXianZu_Update1.wsdl" MetadataType="Wsdl" ID="71360d22-3900-44ce-a6c4-fe31f5618045" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update.svc?wsdl" />
+    <MetadataFile FileName="BLL物流管理系统4.xsd" MetadataType="Schema" ID="3d47903c-eab8-41b3-877b-e223967aadcf" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update.svc?xsd=xsd3" />
+    <MetadataFile FileName="BLL物流管理系统41.xsd" MetadataType="Schema" ID="2c5e0cc3-a38b-4d4b-8a3e-f6083d6414b4" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL物流管理系统42.xsd" MetadataType="Schema" ID="c57ce72b-c761-484e-96ca-ae0ef535297f" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL物流管理系统1.disco" MetadataType="Disco" ID="f06243a2-583a-41cf-b20f-674d361a8248" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update.svc?disco" />
+    <MetadataFile FileName="BLL物流管理系统43.xsd" MetadataType="Schema" ID="efe1a119-0660-4ce4-8133-1041fa5ba8a8" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

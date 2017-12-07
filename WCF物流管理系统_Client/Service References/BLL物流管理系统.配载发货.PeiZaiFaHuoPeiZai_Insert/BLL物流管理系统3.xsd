@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="frmPeiZaiFaHuoPeiZai_Insert_SelectHuodanhao">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuoPeiZai_Insert_SelectHuodanhaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuoPeiZai_Insert_SelectHuodanhaoResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_SelectcboWiangDian">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_SelectcboWiangDianResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_SelectcboWiangDianResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_SelectcboXianLu">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_SelectcboXianLuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_SelectcboXianLuResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_SelectcboCheLiang">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_SelectcboCheLiangResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_SelectcboCheLiangResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_SelectSiJi">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_SelectSiJiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_SelectSiJiResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="分包ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDingResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="开始网点ID" type="xs:int" />
+        <xs:element minOccurs="0" name="结束网点ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJuResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_LockFenBaoSuoDing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="分包ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_LockFenBaoSuoDingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_LockFenBaoSuoDingResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_InsertPeiZaiFaChe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="配载发车单号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="车辆ID" type="xs:int" />
+        <xs:element minOccurs="0" name="司机ID" type="xs:int" />
+        <xs:element minOccurs="0" name="发车网点ID" type="xs:int" />
+        <xs:element minOccurs="0" name="线路ID" type="xs:int" />
+        <xs:element minOccurs="0" name="目的网点ID" type="xs:int" />
+        <xs:element minOccurs="0" name="接单时间" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="配载发车单ID" type="xs:int" />
+        <xs:element minOccurs="0" name="分包ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTai">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="车辆ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTaiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTai">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="司机ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTaiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

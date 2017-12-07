@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_XianLuGuanLi_WangDianGuanLi" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_XianLuGuanLi_WangDianGuanLi_btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTai" />
+  </wsdl:message>
+  <wsdl:message name="FRM_XianLuGuanLi_WangDianGuanLi_btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_XianLuGuanLi_WangDianGuanLi_btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_XianLuGuanLi_WangDianGuanLi_btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_XianLuGuanLi_WangDianGuanLi_dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_XianLuGuanLi_WangDianGuanLi_dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_XianLuGuanLi_WangDianGuanLi_tsbShanChu_Delete_Click_ShanChuWangDian_InputMessage">
+    <wsdl:part name="parameters" element="tns:tsbShanChu_Delete_Click_ShanChuWangDian" />
+  </wsdl:message>
+  <wsdl:message name="FRM_XianLuGuanLi_WangDianGuanLi_tsbShanChu_Delete_Click_ShanChuWangDian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tsbShanChu_Delete_Click_ShanChuWangDianResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_XianLuGuanLi_WangDianGuanLi">
+    <wsdl:operation name="btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTai" message="tns:FRM_XianLuGuanLi_WangDianGuanLi_btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTaiResponse" message="tns:FRM_XianLuGuanLi_WangDianGuanLi_btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXi" message="tns:FRM_XianLuGuanLi_WangDianGuanLi_btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiResponse" message="tns:FRM_XianLuGuanLi_WangDianGuanLi_btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXi" message="tns:FRM_XianLuGuanLi_WangDianGuanLi_dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXiResponse" message="tns:FRM_XianLuGuanLi_WangDianGuanLi_dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tsbShanChu_Delete_Click_ShanChuWangDian">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/tsbShanChu_Delete_Click_ShanChuWangDian" message="tns:FRM_XianLuGuanLi_WangDianGuanLi_tsbShanChu_Delete_Click_ShanChuWangDian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/tsbShanChu_Delete_Click_ShanChuWangDianResponse" message="tns:FRM_XianLuGuanLi_WangDianGuanLi_tsbShanChu_Delete_Click_ShanChuWangDian_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi" type="tns:FRM_XianLuGuanLi_WangDianGuanLi">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTai">
+      <soap:operation soapAction="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXiONZhuangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/btnChaXunWangDianXinXi_Click_ChaXunWangDianXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/dgvWangDianXinXi_CellClick_ChaXunXiangLinWangDianXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tsbShanChu_Delete_Click_ShanChuWangDian">
+      <soap:operation soapAction="http://tempuri.org/FRM_XianLuGuanLi_WangDianGuanLi/tsbShanChu_Delete_Click_ShanChuWangDian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_XianLuGuanLi_WangDianGuanLi">
+    <wsdl:port name="BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi" binding="tns:BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi">
+      <soap:address location="http://localhost:9998/BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

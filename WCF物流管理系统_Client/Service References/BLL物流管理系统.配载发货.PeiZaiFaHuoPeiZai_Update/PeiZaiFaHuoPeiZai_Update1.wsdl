@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PeiZaiFaHuoPeiZai_Update" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanID_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanID" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanID_InputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanID" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_SelectcboWiangDian_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_SelectcboWiangDian" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_SelectcboWiangDian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_SelectcboWiangDianResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_SelectcboXianLu_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_SelectcboXianLu" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_SelectcboXianLu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_SelectcboXianLuResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_SelectSiJiBySiJiID_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_SelectSiJiBySiJiID" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_SelectSiJiBySiJiID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_SelectSiJiBySiJiIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_SelectcboCheLiang_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_SelectcboCheLiang" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_SelectcboCheLiang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_SelectcboCheLiangResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDingResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiID_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiID" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTai" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByID" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTai" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanID_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanID" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoID_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoID" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXi" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJu_InputMessage">
+    <wsdl:part name="parameters" element="tns:cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJu" />
+  </wsdl:message>
+  <wsdl:message name="PeiZaiFaHuoPeiZai_Update_cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PeiZaiFaHuoPeiZai_Update">
+    <wsdl:operation name="FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanID">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanID" message="tns:PeiZaiFaHuoPeiZai_Update_FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanIDResponse" message="tns:PeiZaiFaHuoPeiZai_Update_FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanID">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanID" message="tns:PeiZaiFaHuoPeiZai_Update_FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanIDResponse" message="tns:PeiZaiFaHuoPeiZai_Update_FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_SelectcboWiangDian">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_SelectcboWiangDian" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_SelectcboWiangDian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_SelectcboWiangDianResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_SelectcboWiangDian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_SelectcboXianLu">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_SelectcboXianLu" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_SelectcboXianLu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_SelectcboXianLuResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_SelectcboXianLu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_SelectSiJiBySiJiID">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_SelectSiJiBySiJiID" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_SelectSiJiBySiJiID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_SelectSiJiBySiJiIDResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_SelectSiJiBySiJiID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_SelectcboCheLiang">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_SelectcboCheLiang" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_SelectcboCheLiang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_SelectcboCheLiangResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_SelectcboCheLiang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDingResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiID">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiID" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiIDResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTai" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTaiResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByID" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByIDResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTai" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTaiResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanID">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanID" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanIDResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoID">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoID" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoIDResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXi" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXiResponse" message="tns:PeiZaiFaHuoPeiZai_Update_frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJu">
+      <wsdl:input wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJu" message="tns:PeiZaiFaHuoPeiZai_Update_cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJuResponse" message="tns:PeiZaiFaHuoPeiZai_Update_cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJu_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_PeiZaiFaHuoPeiZai_Update" type="tns:PeiZaiFaHuoPeiZai_Update">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanID">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/FRM_PeiZaiFaHuoPeiZai_SelectPeiZaiFaHuoDanBYPeiZaiFaHuoDanID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanID">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaHuoDanID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_SelectcboWiangDian">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_SelectcboWiangDian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_SelectcboXianLu">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_SelectcboXianLu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_SelectSiJiBySiJiID">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_SelectSiJiBySiJiID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_SelectcboCheLiang">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_SelectcboCheLiang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiID">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTai">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_UpdateSiJiZhuangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByID">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTai">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_UpdateCheLiangZhuangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanID">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_UpdatePeiZaiFaCheDanByFaCheDanID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoID">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXi">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/frmPeiZaiFaHuo_Insert_InsertPeiZaiFaCheMingXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJu">
+      <soap:operation soapAction="http://tempuri.org/PeiZaiFaHuoPeiZai_Update/cboFaHuoWangDian_SelectedIndexChanged_ChaXunLuXianLinJu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PeiZaiFaHuoPeiZai_Update">
+    <wsdl:port name="BasicHttpBinding_PeiZaiFaHuoPeiZai_Update" binding="tns:BasicHttpBinding_PeiZaiFaHuoPeiZai_Update">
+      <soap:address location="http://localhost:9998/BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

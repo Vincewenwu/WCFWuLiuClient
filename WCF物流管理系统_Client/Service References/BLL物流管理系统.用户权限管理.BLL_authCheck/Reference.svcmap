@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="042457bb-eac4-444d-bcf7-0a8334d570e9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_authCheck.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL物流管理系统1.disco" MetadataType="Disco" ID="5cb16e5b-a572-49f6-97a5-57862f112896" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_authCheck.svc?disco" />
+    <MetadataFile FileName="BLL_authCheck1.wsdl" MetadataType="Wsdl" ID="fcdfe244-8f72-4dda-b34b-e81f5a38c7e2" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_authCheck.svc?wsdl" />
+    <MetadataFile FileName="BLL物流管理系统2.xsd" MetadataType="Schema" ID="292ec54c-ed6c-4fde-9763-79256b97007f" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_authCheck.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL物流管理系统21.xsd" MetadataType="Schema" ID="096b240c-70b5-45e9-9b09-31e19eb70797" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.用户权限管理.BLL_authCheck.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

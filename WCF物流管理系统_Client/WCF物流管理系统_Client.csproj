@@ -1,0 +1,1624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1EBE0AE7-523D-40C5-8423-810EF3EB5538}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCF物流管理系统_Client</RootNamespace>
+    <AssemblyName>WCF物流管理系统_Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DataGridViewAutoFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.3990.25764, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DS_WuLiu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_WuLiu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Info.designer.cs">
+      <DependentUpon>FRM_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Login.designer.cs">
+      <DependentUpon>FRM_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Main.Designer.cs">
+      <DependentUpon>FRM_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_QiShi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_QiShi.Designer.cs">
+      <DependentUpon>FRM_QiShi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\BLL物流管理系统.Login\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.出车登记.FRM_ChuCheDengJi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_XuanZheJiGou\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.报表统计.FRM_BaoBiaoDingDanLiuLan\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.报表统计.FRM_DingDanBaoBiao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.报表统计.FRM_YeWuYuanYeJi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.报表统计.FRM_YuanGongGongZuoZheng\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.用户权限管理.BLL_authCheck\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.用户权限管理.BLL_XuanZheQuanXianZu\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuo_ShiShiPeiZai\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_PublicStaticClass.cs" />
+    <Compile Include="PublicStaticMothd.cs" />
+    <Compile Include="公共方法\ExportXML.cs" />
+    <Compile Include="公共方法\ImportXML.cs" />
+    <Compile Include="公共方法\UpdateXMLNode.cs" />
+    <Compile Include="出车登记\FRM_ChuCheDengJi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="出车登记\FRM_ChuCheDengJi.designer.cs">
+      <DependentUpon>FRM_ChuCheDengJi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="出车登记\FRM_DaoDaDengJi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="出车登记\FRM_DaoDaDengJi.designer.cs">
+      <DependentUpon>FRM_DaoDaDengJi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="司机管理\dsSiJiGuanLi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSiJiGuanLi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="司机管理\FRM_SiJiGuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="司机管理\FRM_SiJiGuanLi.designer.cs">
+      <DependentUpon>FRM_SiJiGuanLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="司机管理\FRM_SiJiGuanLi_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="司机管理\FRM_SiJiGuanLi_Insert.designer.cs">
+      <DependentUpon>FRM_SiJiGuanLi_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="司机管理\FRM_SiJiGuanLi_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="司机管理\FRM_SiJiGuanLi_Update.designer.cs">
+      <DependentUpon>FRM_SiJiGuanLi_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="司机管理\FRM_XuanZheJiGou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="司机管理\FRM_XuanZheJiGou.designer.cs">
+      <DependentUpon>FRM_XuanZheJiGou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表统计\CRP_DingDanBaoBiao.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRP_DingDanBaoBiao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="报表统计\CRP_ErWeiMaDanHaoDaYin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRP_ErWeiMaDanHaoDaYin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="报表统计\CRP_ErWeiMaWangDianDaYin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRP_ErWeiMaWangDianDaYin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="报表统计\CRP_RenShiKaoHeBiao.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRP_RenShiKaoHeBiao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="报表统计\CRP_RiQiWangDianTongJi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRP_RiQiWangDianTongJi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="报表统计\CRP_ShenHeHuoPinTongJi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRP_ShenHeHuoPinTongJi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="报表统计\CRP_ShouHuoFangTongJi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRP_ShouHuoFangTongJi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="报表统计\CRP_YeWuYuanYeJi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRP_YeWuYuanYeJi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="报表统计\CRP_YuanGongGongZuoZhengDaYin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRP_YuanGongGongZuoZhengDaYin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="报表统计\CRP_YueFenTuoYunFangTongJi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRP_YueFenTuoYunFangTongJi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_BaoBiaoDingDanLiuLan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_BaoBiaoDingDanLiuLan.designer.cs">
+      <DependentUpon>FRM_BaoBiaoDingDanLiuLan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表统计\FRM_DingDanBaoBiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_DingDanBaoBiao.designer.cs">
+      <DependentUpon>FRM_DingDanBaoBiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表统计\FRM_ErWeiMaDanHao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_ErWeiMaDanHao.designer.cs">
+      <DependentUpon>FRM_ErWeiMaDanHao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表统计\FRM_ErWeiMaDanHaoDaYin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_ErWeiMaDanHaoDaYin.designer.cs">
+      <DependentUpon>FRM_ErWeiMaDanHaoDaYin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表统计\FRM_ErWeiMaMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_ErWeiMaMain.designer.cs">
+      <DependentUpon>FRM_ErWeiMaMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表统计\FRM_ErWeiMaWangDianDaYin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_ErWeiMaWangDianDaYin.designer.cs">
+      <DependentUpon>FRM_ErWeiMaWangDianDaYin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表统计\FRM_RenShiKaoHeBiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_RenShiKaoHeBiao.designer.cs">
+      <DependentUpon>FRM_RenShiKaoHeBiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表统计\FRM_RiQiWangDianTongJi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_RiQiWangDianTongJi.Designer.cs" />
+    <Compile Include="报表统计\FRM_ShenHeHuoPinTongJi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_ShenHeHuoPinTongJi.Designer.cs" />
+    <Compile Include="报表统计\FRM_ShouHuoFangTongJi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_ShouHuoFangTongJi.Designer.cs" />
+    <Compile Include="报表统计\FRM_WeiTuoYunFangTongJi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_WeiTuoYunFangTongJi.Designer.cs" />
+    <Compile Include="报表统计\FRM_YeWuYuanYeJi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_YeWuYuanYeJi.Designer.cs" />
+    <Compile Include="报表统计\FRM_YuanGongGongZuoZheng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_YuanGongGongZuoZheng.Designer.cs" />
+    <Compile Include="报表统计\FRM_YuanGongGongZuoZhengDaYin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表统计\FRM_YuanGongGongZuoZhengDaYin.Designer.cs" />
+    <Compile Include="用户权限管理\authCheck.cs" />
+    <Compile Include="用户权限管理\FRM_QuanXianZu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_QuanXianZu.designer.cs">
+      <DependentUpon>FRM_QuanXianZu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_QuanXianZu_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_QuanXianZu_Insert.designer.cs">
+      <DependentUpon>FRM_QuanXianZu_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_QuanXianZu_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_QuanXianZu_Update.designer.cs">
+      <DependentUpon>FRM_QuanXianZu_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_XuanZheQuanXianZu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_XuanZheQuanXianZu.designer.cs">
+      <DependentUpon>FRM_XuanZheQuanXianZu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_YongHuQuanXian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_YongHuQuanXian.designer.cs">
+      <DependentUpon>FRM_YongHuQuanXian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_YongHuQuanXian_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_YongHuQuanXian_Insert.designer.cs">
+      <DependentUpon>FRM_YongHuQuanXian_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_YongHuQuanXian_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限管理\FRM_YongHuQuanXian_Update.designer.cs">
+      <DependentUpon>FRM_YongHuQuanXian_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi.designer.cs">
+      <DependentUpon>FRM_XianLuGuanLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi_Insert.designer.cs">
+      <DependentUpon>FRM_XianLuGuanLi_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi_Update.designer.cs">
+      <DependentUpon>FRM_XianLuGuanLi_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi_WangDianGuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi_WangDianGuanLi.designer.cs">
+      <DependentUpon>FRM_XianLuGuanLi_WangDianGuanLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi_WangDianGuanLi_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi_WangDianGuanLi_Insert.designer.cs">
+      <DependentUpon>FRM_XianLuGuanLi_WangDianGuanLi_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi_WangDianGuanLi_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="线路管理\FRM_XianLuGuanLi_WangDianGuanLi_Update.designer.cs">
+      <DependentUpon>FRM_XianLuGuanLi_WangDianGuanLi_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="订单管理\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="订单管理\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi.designer.cs">
+      <DependentUpon>FRM_DingDanGuanLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi_Insert.designer.cs">
+      <DependentUpon>FRM_DingDanGuanLi_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi_Insert_InsertKeHu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi_Insert_InsertKeHu.designer.cs">
+      <DependentUpon>FRM_DingDanGuanLi_Insert_InsertKeHu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi_Insert_SelectHuoWu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi_Insert_SelectHuoWu.designer.cs">
+      <DependentUpon>FRM_DingDanGuanLi_Insert_SelectHuoWu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi_Update.designer.cs">
+      <DependentUpon>FRM_DingDanGuanLi_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi_Update_SelectHuoWu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="订单管理\FRM_DingDanGuanLi_Update_SelectHuoWu.designer.cs">
+      <DependentUpon>FRM_DingDanGuanLi_Update_SelectHuoWu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="订单管理\FRM_WuLiuXinXiChaXun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="订单管理\FRM_WuLiuXinXiChaXun.designer.cs">
+      <DependentUpon>FRM_WuLiuXinXiChaXun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆状态\FRM_CheLiangZhuangTai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆状态\FRM_CheLiangZhuangTai.Designer.cs">
+      <DependentUpon>FRM_CheLiangZhuangTai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆状态\FRM_CheLiangZhuangTai_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆状态\FRM_CheLiangZhuangTai_Insert.Designer.cs">
+      <DependentUpon>FRM_CheLiangZhuangTai_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆状态\FRM_CheLiangZhuangTai_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆状态\FRM_CheLiangZhuangTai_Update.Designer.cs">
+      <DependentUpon>FRM_CheLiangZhuangTai_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoFenBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoFenBao.designer.cs">
+      <DependentUpon>FRM_PeiZaiFaHuoFenBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoFenBao_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoFenBao_Update.designer.cs">
+      <DependentUpon>FRM_PeiZaiFaHuoFenBao_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoPeiZai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoPeiZai.designer.cs">
+      <DependentUpon>FRM_PeiZaiFaHuoPeiZai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoPeiZai_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoPeiZai_Insert.designer.cs">
+      <DependentUpon>FRM_PeiZaiFaHuoPeiZai_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoPeiZai_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoPeiZai_Update.designer.cs">
+      <DependentUpon>FRM_PeiZaiFaHuoPeiZai_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoShiShiPeiZai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="配载发货\FRM_PeiZaiFaHuoShiShiPeiZai.designer.cs">
+      <DependentUpon>FRM_PeiZaiFaHuoShiShiPeiZai.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FRM_Info.resx">
+      <DependentUpon>FRM_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Login.resx">
+      <DependentUpon>FRM_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Main.resx">
+      <DependentUpon>FRM_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_QiShi.resx">
+      <DependentUpon>FRM_QiShi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="出车登记\FRM_ChuCheDengJi.resx">
+      <DependentUpon>FRM_ChuCheDengJi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="出车登记\FRM_DaoDaDengJi.resx">
+      <DependentUpon>FRM_DaoDaDengJi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="司机管理\FRM_SiJiGuanLi.resx">
+      <DependentUpon>FRM_SiJiGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="司机管理\FRM_SiJiGuanLi_Insert.resx">
+      <DependentUpon>FRM_SiJiGuanLi_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="司机管理\FRM_SiJiGuanLi_Update.resx">
+      <DependentUpon>FRM_SiJiGuanLi_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="司机管理\FRM_XuanZheJiGou.resx">
+      <DependentUpon>FRM_XuanZheJiGou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\CRP_DingDanBaoBiao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_DingDanBaoBiao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\CRP_ErWeiMaDanHaoDaYin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_ErWeiMaDanHaoDaYin.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\CRP_ErWeiMaWangDianDaYin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_ErWeiMaWangDianDaYin.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\CRP_RenShiKaoHeBiao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_RenShiKaoHeBiao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\CRP_RiQiWangDianTongJi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_RiQiWangDianTongJi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\CRP_ShenHeHuoPinTongJi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_ShenHeHuoPinTongJi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\CRP_ShouHuoFangTongJi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_ShouHuoFangTongJi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\CRP_YeWuYuanYeJi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_YeWuYuanYeJi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\CRP_YuanGongGongZuoZhengDaYin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_YuanGongGongZuoZhengDaYin.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\CRP_YueFenTuoYunFangTongJi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_YueFenTuoYunFangTongJi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\FRM_BaoBiaoDingDanLiuLan.resx">
+      <DependentUpon>FRM_BaoBiaoDingDanLiuLan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\FRM_DingDanBaoBiao.resx">
+      <DependentUpon>FRM_DingDanBaoBiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\FRM_ErWeiMaDanHao.resx">
+      <DependentUpon>FRM_ErWeiMaDanHao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\FRM_ErWeiMaDanHaoDaYin.resx">
+      <DependentUpon>FRM_ErWeiMaDanHaoDaYin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\FRM_ErWeiMaMain.resx">
+      <DependentUpon>FRM_ErWeiMaMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\FRM_ErWeiMaWangDianDaYin.resx">
+      <DependentUpon>FRM_ErWeiMaWangDianDaYin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\FRM_RenShiKaoHeBiao.resx">
+      <DependentUpon>FRM_RenShiKaoHeBiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表统计\FRM_RiQiWangDianTongJi.resx" />
+    <EmbeddedResource Include="报表统计\FRM_ShenHeHuoPinTongJi.resx" />
+    <EmbeddedResource Include="报表统计\FRM_ShouHuoFangTongJi.resx" />
+    <EmbeddedResource Include="报表统计\FRM_WeiTuoYunFangTongJi.resx" />
+    <EmbeddedResource Include="报表统计\FRM_YeWuYuanYeJi.resx" />
+    <EmbeddedResource Include="报表统计\FRM_YuanGongGongZuoZheng.resx" />
+    <EmbeddedResource Include="报表统计\FRM_YuanGongGongZuoZhengDaYin.resx" />
+    <EmbeddedResource Include="用户权限管理\FRM_QuanXianZu.resx">
+      <DependentUpon>FRM_QuanXianZu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限管理\FRM_QuanXianZu_Insert.resx">
+      <DependentUpon>FRM_QuanXianZu_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限管理\FRM_QuanXianZu_Update.resx">
+      <DependentUpon>FRM_QuanXianZu_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限管理\FRM_XuanZheQuanXianZu.resx">
+      <DependentUpon>FRM_XuanZheQuanXianZu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限管理\FRM_YongHuQuanXian.resx">
+      <DependentUpon>FRM_YongHuQuanXian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限管理\FRM_YongHuQuanXian_Insert.resx">
+      <DependentUpon>FRM_YongHuQuanXian_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限管理\FRM_YongHuQuanXian_Update.resx">
+      <DependentUpon>FRM_YongHuQuanXian_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="线路管理\FRM_XianLuGuanLi.resx">
+      <DependentUpon>FRM_XianLuGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="线路管理\FRM_XianLuGuanLi_Insert.resx">
+      <DependentUpon>FRM_XianLuGuanLi_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="线路管理\FRM_XianLuGuanLi_Update.resx">
+      <DependentUpon>FRM_XianLuGuanLi_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="线路管理\FRM_XianLuGuanLi_WangDianGuanLi.resx">
+      <DependentUpon>FRM_XianLuGuanLi_WangDianGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="线路管理\FRM_XianLuGuanLi_WangDianGuanLi_Insert.resx">
+      <DependentUpon>FRM_XianLuGuanLi_WangDianGuanLi_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="线路管理\FRM_XianLuGuanLi_WangDianGuanLi_Update.resx">
+      <DependentUpon>FRM_XianLuGuanLi_WangDianGuanLi_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="订单管理\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="订单管理\FRM_DingDanGuanLi.resx">
+      <DependentUpon>FRM_DingDanGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="订单管理\FRM_DingDanGuanLi_Insert.resx">
+      <DependentUpon>FRM_DingDanGuanLi_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="订单管理\FRM_DingDanGuanLi_Insert_InsertKeHu.resx">
+      <DependentUpon>FRM_DingDanGuanLi_Insert_InsertKeHu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="订单管理\FRM_DingDanGuanLi_Insert_SelectHuoWu.resx">
+      <DependentUpon>FRM_DingDanGuanLi_Insert_SelectHuoWu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="订单管理\FRM_DingDanGuanLi_Update.resx">
+      <DependentUpon>FRM_DingDanGuanLi_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="订单管理\FRM_DingDanGuanLi_Update_SelectHuoWu.resx">
+      <DependentUpon>FRM_DingDanGuanLi_Update_SelectHuoWu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="订单管理\FRM_WuLiuXinXiChaXun.resx">
+      <DependentUpon>FRM_WuLiuXinXiChaXun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆状态\FRM_CheLiangZhuangTai.resx">
+      <DependentUpon>FRM_CheLiangZhuangTai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆状态\FRM_CheLiangZhuangTai_Insert.resx">
+      <DependentUpon>FRM_CheLiangZhuangTai_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆状态\FRM_CheLiangZhuangTai_Update.resx">
+      <DependentUpon>FRM_CheLiangZhuangTai_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="配载发货\FRM_PeiZaiFaHuoFenBao.resx">
+      <DependentUpon>FRM_PeiZaiFaHuoFenBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="配载发货\FRM_PeiZaiFaHuoFenBao_Update.resx">
+      <DependentUpon>FRM_PeiZaiFaHuoFenBao_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="配载发货\FRM_PeiZaiFaHuoPeiZai.resx">
+      <DependentUpon>FRM_PeiZaiFaHuoPeiZai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="配载发货\FRM_PeiZaiFaHuoPeiZai_Insert.resx">
+      <DependentUpon>FRM_PeiZaiFaHuoPeiZai_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="配载发货\FRM_PeiZaiFaHuoPeiZai_Update.resx">
+      <DependentUpon>FRM_PeiZaiFaHuoPeiZai_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="配载发货\FRM_PeiZaiFaHuoShiShiPeiZai.resx">
+      <DependentUpon>FRM_PeiZaiFaHuoShiShiPeiZai.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_WuLiu.xsc">
+      <DependentUpon>DS_WuLiu.xsd</DependentUpon>
+    </None>
+    <None Include="DS_WuLiu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_WuLiu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_WuLiu.xss">
+      <DependentUpon>DS_WuLiu.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\BLL物流管理系统.Login\BLL物流管理系统.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.Login\BLL物流管理系统1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.Login\BLL物流管理系统2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.Login\Login.wsdl" />
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_ChuCheDengJi\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_ChuCheDengJi\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_ChuCheDengJi\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_ChuCheDengJi\FRM_ChuCheDengJi1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\BLL物流管理系统33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\FRM_DaoDaDengJi1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi\BLL_FRM_SiJiGuanLi1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert\BLL_FRM_SiJiGuanLi_Insert1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Update\BLL_FRM_SiJiGuanLi_Update1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Update\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Update\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Update\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_XuanZheJiGou\BLL_FRM_XuanZheJiGou1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_XuanZheJiGou\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_XuanZheJiGou\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_XuanZheJiGou\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_BaoBiaoDingDanLiuLan\BLL物流管理系统.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_BaoBiaoDingDanLiuLan\BLL物流管理系统1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_BaoBiaoDingDanLiuLan\BLL物流管理系统2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_BaoBiaoDingDanLiuLan\FRM_BaoBiaoDingDanLiuLan.wsdl" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_DingDanBaoBiao\BLL物流管理系统.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_DingDanBaoBiao\BLL物流管理系统1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_DingDanBaoBiao\BLL物流管理系统2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_DingDanBaoBiao\FRM_DingDanBaoBiao.wsdl" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi\BLL物流管理系统.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi\BLL物流管理系统1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi\BLL物流管理系统2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi\FRM_ShenHeHuoPinTongJi.wsdl" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YeWuYuanYeJi\BLL物流管理系统.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YeWuYuanYeJi\BLL物流管理系统1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YeWuYuanYeJi\BLL物流管理系统2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YeWuYuanYeJi\FRM_YeWuYuanYeJi.wsdl" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YuanGongGongZuoZheng\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YuanGongGongZuoZheng\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YuanGongGongZuoZheng\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YuanGongGongZuoZheng\FRM_YuanGongGongZuoZheng1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_authCheck\BLL_authCheck1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_authCheck\BLL物流管理系统2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_authCheck\BLL物流管理系统21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu\BLL_QuanXianZu1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\BLL_QuanXianZu_Insert1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\BLL物流管理系统4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\BLL物流管理系统41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\BLL物流管理系统42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\BLL物流管理系统43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\BLL_QuanXianZu_Update1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\BLL物流管理系统4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\BLL物流管理系统41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\BLL物流管理系统42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\BLL物流管理系统43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_XuanZheQuanXianZu\BLL_XuanZheQuanXianZu1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_XuanZheQuanXianZu\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_XuanZheQuanXianZu\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_XuanZheQuanXianZu\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian\BLL_YongHuQuanXian1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Insert\BLL_YongHuQuanXian_Insert1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Insert\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Insert\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Insert\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Update\BLL_YongHuQuanXian_Update1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Update\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Update\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Update\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi\FRM_XianLuGuanLi1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Insert\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Insert\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Insert\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Insert\FRM_XianLuGuanLi_Insert1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update\FRM_XianLuGuanLi_Update1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi\FRM_XianLuGuanLi_WangDianGuanLi1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Insert\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Insert\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Insert\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Insert\FRM_XianLuGuanLi_WangDianGuanLi_Insert1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Update\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Update\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Update\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Update\FRM_XianLuGuanLi_WangDianGuanLi_Update1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi\DingDanGuanLi1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Insert\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Insert\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Insert\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Insert\DingDanGuanLi_Insert1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Update\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Update\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Update\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Update\DingDanGuanLi_Update1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai\FRM_CheLiangZhuangTai1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\BLL物流管理系统4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\BLL物流管理系统41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\BLL物流管理系统42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\BLL物流管理系统43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\FRM_CheLiangZhuangTai_Insert1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\BLL物流管理系统4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\BLL物流管理系统41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\BLL物流管理系统42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\BLL物流管理系统43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\FRM_CheLiangZhuangTai_Update1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao\FRM_PeiZaiFaHuoFenBao1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update\FRM_PeiZaiFaHuoFenBao_Update1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai\PeiZaiFaHuoPeiZai1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Insert\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Insert\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Insert\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Insert\PeiZaiFaHuoPeiZai_Insert1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update\PeiZaiFaHuoPeiZai_Update1.wsdl" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuo_ShiShiPeiZai\BLL物流管理系统3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuo_ShiShiPeiZai\BLL物流管理系统31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuo_ShiShiPeiZai\BLL物流管理系统32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuo_ShiShiPeiZai\PeiZaiFaHuo_ShiShiPeiZai1.wsdl" />
+    <None Include="司机管理\dsSiJiGuanLi.xsc">
+      <DependentUpon>dsSiJiGuanLi.xsd</DependentUpon>
+    </None>
+    <None Include="司机管理\dsSiJiGuanLi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSiJiGuanLi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="司机管理\dsSiJiGuanLi.xss">
+      <DependentUpon>dsSiJiGuanLi.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="brief.xml" />
+    <Content Include="Resources\1.png" />
+    <Content Include="Resources\2.png" />
+    <Content Include="Resources\3.png" />
+    <Content Include="Resources\4.png" />
+    <Content Include="Resources\5.png" />
+    <Content Include="Resources\6.png" />
+    <Content Include="Resources\7.png" />
+    <None Include="Resources\D8.png" />
+    <None Include="Resources\F1.png" />
+    <Content Include="Resources\Login.png" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YuanGongGongZuoZheng\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_ChuCheDengJi\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Insert\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Update\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuo_ShiShiPeiZai\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Insert\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Update\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_XuanZheJiGou\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Insert\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Insert\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Update\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_authCheck\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_XuanZheQuanXianZu\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Insert\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Update\BLL物流管理系统1.disco" />
+    <None Include="Service References\BLL物流管理系统.Login\BLL物流管理系统.disco" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_BaoBiaoDingDanLiuLan\BLL物流管理系统.disco" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_DingDanBaoBiao\BLL物流管理系统.disco" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi\BLL物流管理系统.disco" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YeWuYuanYeJi\BLL物流管理系统.disco" />
+    <None Include="Service References\BLL物流管理系统.Login\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.Login\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.Login\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuo_ShiShiPeiZai\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuo_ShiShiPeiZai\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuo_ShiShiPeiZai\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Insert\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Insert\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Update\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Update\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_XuanZheJiGou\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_XuanZheJiGou\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_XuanZheJiGou\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_authCheck\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_authCheck\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_authCheck\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_XuanZheQuanXianZu\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_XuanZheQuanXianZu\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_XuanZheQuanXianZu\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Update\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Update\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Insert\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Insert\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Insert\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Insert\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Update\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Update\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Insert\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Insert\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Update\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Update\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Insert\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Insert\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_ChuCheDengJi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_ChuCheDengJi\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.出车登记.FRM_ChuCheDengJi\configuration91.svcinfo" />
+    <None Include="Resources\运送.jpg" />
+    <None Include="Resources\配载.jpg" />
+    <None Include="Resources\空闲.jpg" />
+    <None Include="Resources\停运.jpg" />
+    <None Include="Resources\卸货.jpg" />
+    <None Include="Resources\空闲2.jpg" />
+    <None Include="Resources\停运2.jpg" />
+    <None Include="Resources\tms4.png" />
+    <Content Include="Resources\货车1.jpg" />
+    <None Include="Resources\货车11.jpg" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YuanGongGongZuoZheng\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YuanGongGongZuoZheng\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YuanGongGongZuoZheng\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YeWuYuanYeJi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YeWuYuanYeJi\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_YeWuYuanYeJi\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_BaoBiaoDingDanLiuLan\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_BaoBiaoDingDanLiuLan\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_BaoBiaoDingDanLiuLan\configuration91.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_DingDanBaoBiao\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_DingDanBaoBiao\configuration.svcinfo" />
+    <None Include="Service References\BLL物流管理系统.报表统计.FRM_DingDanBaoBiao\configuration91.svcinfo" />
+    <None Include="Resources\货车22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.Login\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.出车登记.FRM_ChuCheDengJi\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.出车登记.FRM_DaoDaDengJi\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.司机管理.BLL_FRM_XuanZheJiGou\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.报表统计.FRM_BaoBiaoDingDanLiuLan\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.报表统计.FRM_DingDanBaoBiao\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.报表统计.FRM_YeWuYuanYeJi\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.报表统计.FRM_YuanGongGongZuoZheng\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.用户权限管理.BLL_authCheck\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.用户权限管理.BLL_QuanXianZu_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.用户权限管理.BLL_XuanZheQuanXianZu\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.用户权限管理.BLL_YongHuQuanXian_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.线路管理.FRM_XianLuGuanLi_WangDianGuanLi_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.订单管理.DingDanGuanLi_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.配载发货.FRM_PeiZaiFaHuoFenBao_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuoPeiZai_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL物流管理系统.配载发货.PeiZaiFaHuo_ShiShiPeiZai\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

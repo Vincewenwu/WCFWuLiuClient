@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6e79800f-17dc-4797-a5a8-704e3b46fdd4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9998/BLL%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.%E8%BD%A6%E8%BE%86%E7%8A%B6%E6%80%81.FRM_CheLiangZhuangTai_Update.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL物流管理系统41.xsd" MetadataType="Schema" ID="0624a3e9-da02-435f-95e3-3861ebd6324b" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update.svc?xsd=xsd3" />
+    <MetadataFile FileName="BLL物流管理系统4.xsd" MetadataType="Schema" ID="8a1436ca-ba8f-43d6-abed-51491c0cd176" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL物流管理系统43.xsd" MetadataType="Schema" ID="9c7d8a53-fabf-4a75-b7f9-4095d1c967f2" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL物流管理系统1.disco" MetadataType="Disco" ID="6eeaa488-e9a9-4b48-9fd5-f855433411ab" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update.svc?disco" />
+    <MetadataFile FileName="FRM_CheLiangZhuangTai_Update1.wsdl" MetadataType="Wsdl" ID="9ae1e140-dfe0-4bd1-8971-8ff5c5c8e65f" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update.svc?wsdl" />
+    <MetadataFile FileName="BLL物流管理系统42.xsd" MetadataType="Schema" ID="328ac166-6c65-4373-b30c-5c722f082ee1" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

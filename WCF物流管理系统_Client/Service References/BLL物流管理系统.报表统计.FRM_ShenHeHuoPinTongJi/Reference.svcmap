@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0c3dc812-6b9a-4106-8faa-37c3120b4f07" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9998/BLL%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.%E6%8A%A5%E8%A1%A8%E7%BB%9F%E8%AE%A1.FRM_ShenHeHuoPinTongJi.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL物流管理系统.xsd" MetadataType="Schema" ID="fd11caf9-9e7d-46e2-8d7d-54f60be13f83" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL物流管理系统1.xsd" MetadataType="Schema" ID="e5165658-f4b7-4f54-bc25-47c372dd81a9" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL物流管理系统.disco" MetadataType="Disco" ID="792a4846-87b9-4471-a518-26547149638f" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi.svc?disco" />
+    <MetadataFile FileName="BLL物流管理系统2.xsd" MetadataType="Schema" ID="e89f0ae9-0117-4914-82a9-2f5461f5dad0" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi.svc?xsd=xsd0" />
+    <MetadataFile FileName="FRM_ShenHeHuoPinTongJi.wsdl" MetadataType="Wsdl" ID="a8edd76b-3ba6-44d3-b87f-57e47c4d6042" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.报表统计.FRM_ShenHeHuoPinTongJi.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

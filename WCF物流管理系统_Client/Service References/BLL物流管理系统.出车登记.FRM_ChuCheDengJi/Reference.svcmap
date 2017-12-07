@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="654c0e61-81b5-42e8-80ce-89a00197bf50" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9998/BLL%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.%E5%87%BA%E8%BD%A6%E7%99%BB%E8%AE%B0.FRM_ChuCheDengJi.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL物流管理系统32.xsd" MetadataType="Schema" ID="9b3893cf-f97f-424d-b896-52d0f3058281" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.出车登记.FRM_ChuCheDengJi.svc?xsd=xsd2" />
+    <MetadataFile FileName="FRM_ChuCheDengJi1.wsdl" MetadataType="Wsdl" ID="dccbe587-32fd-422b-ba95-9f84b5424e40" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.出车登记.FRM_ChuCheDengJi.svc?wsdl" />
+    <MetadataFile FileName="BLL物流管理系统3.xsd" MetadataType="Schema" ID="01317180-3468-4ce7-ac19-a310cf109c5a" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.出车登记.FRM_ChuCheDengJi.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL物流管理系统1.disco" MetadataType="Disco" ID="5b971885-30e9-47af-b627-a276583add26" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.出车登记.FRM_ChuCheDengJi.svc?disco" />
+    <MetadataFile FileName="BLL物流管理系统31.xsd" MetadataType="Schema" ID="d7b20cd0-11f1-46ef-a215-20cd1b8ce76d" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.出车登记.FRM_ChuCheDengJi.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fbf5399e-4b7e-450a-b03d-d0cfda2840e6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9998/BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL物流管理系统3.xsd" MetadataType="Schema" ID="c408f0d8-4343-4e21-833a-caec1066dc05" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL物流管理系统31.xsd" MetadataType="Schema" ID="11b76f10-6a65-4ae8-a569-49e446d3f480" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL_FRM_SiJiGuanLi_Insert1.wsdl" MetadataType="Wsdl" ID="06de3add-e3da-465d-abbd-d6c62827efef" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert.svc?wsdl" />
+    <MetadataFile FileName="BLL物流管理系统32.xsd" MetadataType="Schema" ID="7fc088f2-c830-4914-afb1-b56089c4bf3b" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL物流管理系统1.disco" MetadataType="Disco" ID="2094c11b-1da8-419e-9f55-c5f0e7f524a0" SourceId="1" SourceUrl="http://localhost:9998/BLL物流管理系统.司机管理.BLL_FRM_SiJiGuanLi_Insert.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

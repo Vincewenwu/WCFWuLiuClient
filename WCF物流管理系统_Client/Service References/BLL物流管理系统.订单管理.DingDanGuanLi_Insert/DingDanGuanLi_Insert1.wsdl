@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DingDanGuanLi_Insert" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.订单管理.DingDanGuanLi_Insert.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.订单管理.DingDanGuanLi_Insert.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9998/BLL物流管理系统.订单管理.DingDanGuanLi_Insert.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectHuodanhao_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectHuodanhao" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectHuodanhao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectHuodanhaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectWangDian_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectWangDian" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectWangDian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectWangDianResponse" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectYuanGong_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectYuanGong" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectYuanGong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectYuanGongResponse" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectKeHu_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectKeHu" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectKeHu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectKeHuResponse" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectJiFeiGongShi_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectJiFeiGongShi" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectJiFeiGongShi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectJiFeiGongShiResponse" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectJieSuanFangShi_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectJieSuanFangShi" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectJieSuanFangShi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectJieSuanFangShiResponse" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTai" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectHuoWu_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectHuoWu" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectHuoWu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmDingDanGuanLi_Insert_SelectHuoWuResponse" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_btnBaoCun_Click_InsertDanJu_InputMessage">
+    <wsdl:part name="parameters" element="tns:btnBaoCun_Click_InsertDanJu" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_btnBaoCun_Click_InsertDanJu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btnBaoCun_Click_InsertDanJuResponse" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_btnBaoCun_Click_InsertMingXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:btnBaoCun_Click_InsertMingXi" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_btnBaoCun_Click_InsertMingXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btnBaoCun_Click_InsertMingXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_btnBaoCun_Click_SelectZuiDaDanHao_InputMessage">
+    <wsdl:part name="parameters" element="tns:btnBaoCun_Click_SelectZuiDaDanHao" />
+  </wsdl:message>
+  <wsdl:message name="DingDanGuanLi_Insert_btnBaoCun_Click_SelectZuiDaDanHao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btnBaoCun_Click_SelectZuiDaDanHaoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DingDanGuanLi_Insert">
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectHuodanhao">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectHuodanhao" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectHuodanhao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectHuodanhaoResponse" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectHuodanhao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectWangDian">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectWangDian" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectWangDian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectWangDianResponse" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectWangDian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectYuanGong">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectYuanGong" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectYuanGong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectYuanGongResponse" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectYuanGong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectKeHu">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectKeHu" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectKeHu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectKeHuResponse" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectKeHu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectJiFeiGongShi">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectJiFeiGongShi" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectJiFeiGongShi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectJiFeiGongShiResponse" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectJiFeiGongShi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectJieSuanFangShi">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectJieSuanFangShi" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectJieSuanFangShi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectJieSuanFangShiResponse" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectJieSuanFangShi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTai" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTaiResponse" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectHuoWu">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectHuoWu" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectHuoWu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectHuoWuResponse" message="tns:DingDanGuanLi_Insert_frmDingDanGuanLi_Insert_SelectHuoWu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btnBaoCun_Click_InsertDanJu">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/btnBaoCun_Click_InsertDanJu" message="tns:DingDanGuanLi_Insert_btnBaoCun_Click_InsertDanJu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/btnBaoCun_Click_InsertDanJuResponse" message="tns:DingDanGuanLi_Insert_btnBaoCun_Click_InsertDanJu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btnBaoCun_Click_InsertMingXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/btnBaoCun_Click_InsertMingXi" message="tns:DingDanGuanLi_Insert_btnBaoCun_Click_InsertMingXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/btnBaoCun_Click_InsertMingXiResponse" message="tns:DingDanGuanLi_Insert_btnBaoCun_Click_InsertMingXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btnBaoCun_Click_SelectZuiDaDanHao">
+      <wsdl:input wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/btnBaoCun_Click_SelectZuiDaDanHao" message="tns:DingDanGuanLi_Insert_btnBaoCun_Click_SelectZuiDaDanHao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/DingDanGuanLi_Insert/btnBaoCun_Click_SelectZuiDaDanHaoResponse" message="tns:DingDanGuanLi_Insert_btnBaoCun_Click_SelectZuiDaDanHao_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL物流管理系统.订单管理.DingDanGuanLi_Insert" type="tns:DingDanGuanLi_Insert">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectHuodanhao">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectHuodanhao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectWangDian">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectWangDian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectYuanGong">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectYuanGong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectKeHu">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectKeHu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectJiFeiGongShi">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectJiFeiGongShi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectJieSuanFangShi">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectJieSuanFangShi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTai">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectCboLanShouZhuangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmDingDanGuanLi_Insert_SelectHuoWu">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/frmDingDanGuanLi_Insert_SelectHuoWu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnBaoCun_Click_InsertDanJu">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/btnBaoCun_Click_InsertDanJu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnBaoCun_Click_InsertMingXi">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/btnBaoCun_Click_InsertMingXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnBaoCun_Click_SelectZuiDaDanHao">
+      <soap:operation soapAction="http://tempuri.org/DingDanGuanLi_Insert/btnBaoCun_Click_SelectZuiDaDanHao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DingDanGuanLi_Insert">
+    <wsdl:port name="BLL物流管理系统.订单管理.DingDanGuanLi_Insert" binding="tns:BLL物流管理系统.订单管理.DingDanGuanLi_Insert">
+      <soap:address location="http://localhost:9998/BLL%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.%E8%AE%A2%E5%8D%95%E7%AE%A1%E7%90%86.DingDanGuanLi_Insert.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

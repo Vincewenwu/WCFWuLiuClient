@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDan">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaCheID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="配载发车单ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaCheIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_PeiZaiFaHuoPeiZai_selectPeiZaiFaHuoDanMingXiByFaCheIDResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_SelectFaCheZhuangTaiByPeiZaiFaCheID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="配载发车单ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_SelectFaCheZhuangTaiByPeiZaiFaCheIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_PeiZaiFaHuoPeiZai_SelectFaCheZhuangTaiByPeiZaiFaCheIDResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="分包ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Insert_ConcelFenBaoSuoDingResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="分包ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Update_DeletePeiZaiMingXiByFenBaoIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_DeletePeiZaiDanByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="配载发车单ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_DeletePeiZaiDanByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_PeiZaiFaHuoPeiZai_DeletePeiZaiDanByIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="司机ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Update_UpdateSiJiZhuangTaiBySiJiIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="车辆ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmPeiZaiFaHuo_Update_UpdateCheLiangZhuangTaiByIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_SelectCboFaCheZhaungTai">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_SelectCboFaCheZhaungTaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_PeiZaiFaHuoPeiZai_SelectCboFaCheZhaungTaiResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_MoHuSelectPeiZaiFaCheDan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="起始时间" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="结束时间" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="发车状态ID" type="xs:int" />
+        <xs:element minOccurs="0" name="配载发车单号" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_MoHuSelectPeiZaiFaCheDanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_PeiZaiFaHuoPeiZai_MoHuSelectPeiZaiFaCheDanResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_SelectWangDianByByXianLu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="线路ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_SelectWangDianByByXianLuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_PeiZaiFaHuoPeiZai_SelectWangDianByByXianLuResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_Load_SelectFaCheZhuangTai">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_Load_SelectFaCheZhuangTaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_PeiZaiFaHuoPeiZai_Load_SelectFaCheZhuangTaiResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_btnChuCheShenQing_Click_UpdateCheLiangZhuangTai">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="配载发车单ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_PeiZaiFaHuoPeiZai_btnChuCheShenQing_Click_UpdateCheLiangZhuangTaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_PeiZaiFaHuoPeiZai_btnChuCheShenQing_Click_UpdateCheLiangZhuangTaiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

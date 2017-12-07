@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9998/BLL物流管理系统.车辆状态.FRM_CheLiangZhuangTai_Update.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="FRM_CheLiangZhuangTai_Update_Load_ChaXunCheDui">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_CheLiangZhuangTai_Update_Load_ChaXunCheDuiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_CheLiangZhuangTai_Update_Load_ChaXunCheDuiResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_CheLiangZhuangTai_Update_Load_ChaXunSiJi">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_CheLiangZhuangTai_Update_Load_ChaXunSiJiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_CheLiangZhuangTai_Update_Load_ChaXunSiJiResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_CheLiangZhuangTai_Update_Load_IDChaXunCheLiang">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCheLiangID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_CheLiangZhuangTai_Update_Load_IDChaXunCheLiangResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FRM_CheLiangZhuangTai_Update_Load_IDChaXunCheLiangResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnBaoCun_Update_Click_XiuGaiCheLiang">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="车队ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="车牌号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="行驶证号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="保险证号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="状态ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="发动机号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="车架号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="负责人_司机ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="紧急联系人_司机ID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="byteTuPian" nillable="true" type="q1:ArrayOfbase64Binary" />
+        <xs:element minOccurs="0" name="车辆ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnBaoCun_Update_Click_XiuGaiCheLiangResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btnBaoCun_Update_Click_XiuGaiCheLiangResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_CheLiangZhuangTai_Update_Load_ChaXunTuPian">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strLuJing" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FRM_CheLiangZhuangTai_Update_Load_ChaXunTuPianResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FRM_CheLiangZhuangTai_Update_Load_ChaXunTuPianResult" nillable="true" type="q2:ArrayOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

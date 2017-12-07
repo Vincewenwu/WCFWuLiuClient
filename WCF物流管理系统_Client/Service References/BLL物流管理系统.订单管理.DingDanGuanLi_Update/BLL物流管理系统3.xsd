@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="frmDingDanGuanLi_Update_SelectWangDian">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectWangDianResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmDingDanGuanLi_Update_SelectWangDianResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectYuanGong">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectYuanGongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmDingDanGuanLi_Update_SelectYuanGongResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectKeHu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="客户名称" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectKeHuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmDingDanGuanLi_Update_SelectKeHuResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectJiFeiGongShi">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectJiFeiGongShiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmDingDanGuanLi_Update_SelectJiFeiGongShiResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectJieSuanFangShi">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectJieSuanFangShiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmDingDanGuanLi_Update_SelectJieSuanFangShiResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectCboLanShouZhuangTai">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectCboLanShouZhuangTaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmDingDanGuanLi_Update_SelectCboLanShouZhuangTaiResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectHuoWu">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectHuoWuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmDingDanGuanLi_Update_SelectHuoWuResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_Load_SelectHuoYunDan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="huoYunDanID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_Load_SelectHuoYunDanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmDingDanGuanLi_Update_Load_SelectHuoYunDanResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectHuoYunDanMingXiByHuoYunDanID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="huoYunDanID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmDingDanGuanLi_Update_SelectHuoYunDanMingXiByHuoYunDanIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmDingDanGuanLi_Update_SelectHuoYunDanMingXiByHuoYunDanIDResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnBaoCun_Click_UpdateDanJu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="单据编号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="接单时间" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="业务员_员工ID" type="xs:int" />
+        <xs:element minOccurs="0" name="要求送达时间" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="托运方ID" type="xs:int" />
+        <xs:element minOccurs="0" name="提单号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="收货方ID" type="xs:int" />
+        <xs:element minOccurs="0" name="寄件地址" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="收货地址" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="结算方式ID" type="xs:int" />
+        <xs:element minOccurs="0" name="运费总价" type="xs:decimal" />
+        <xs:element minOccurs="0" name="备注" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="制单人_员工ID" type="xs:int" />
+        <xs:element minOccurs="0" name="修单人_员工ID" type="xs:int" />
+        <xs:element minOccurs="0" name="寄件网点ID" type="xs:int" />
+        <xs:element minOccurs="0" name="收货网点ID" type="xs:int" />
+        <xs:element minOccurs="0" name="货物揽收状态ID" type="xs:int" />
+        <xs:element minOccurs="0" name="货运单ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnBaoCun_Click_UpdateDanJuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btnBaoCun_Click_UpdateDanJuResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnBaoCun_Click_UpdateMingXi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="货物ID" type="xs:int" />
+        <xs:element minOccurs="0" name="数量" type="xs:decimal" />
+        <xs:element minOccurs="0" name="计费公式ID" type="xs:int" />
+        <xs:element minOccurs="0" name="运费单价" type="xs:decimal" />
+        <xs:element minOccurs="0" name="揽收否" type="xs:boolean" />
+        <xs:element minOccurs="0" name="货运单ID" type="xs:int" />
+        <xs:element minOccurs="0" name="货运单明细ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnBaoCun_Click_UpdateMingXiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btnBaoCun_Click_UpdateMingXiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnBaoCun_Click_InsertDanJuMingXi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="货物ID" type="xs:int" />
+        <xs:element minOccurs="0" name="数量" type="xs:decimal" />
+        <xs:element minOccurs="0" name="计费公式ID" type="xs:int" />
+        <xs:element minOccurs="0" name="运费单价" type="xs:decimal" />
+        <xs:element minOccurs="0" name="揽收否" type="xs:boolean" />
+        <xs:element minOccurs="0" name="货运单ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnBaoCun_Click_InsertDanJuMingXiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btnBaoCun_Click_InsertDanJuMingXiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnBaoCun_Click_DeleteDanJuMingXi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="货运单明细ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btnBaoCun_Click_DeleteDanJuMingXiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btnBaoCun_Click_DeleteDanJuMingXiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
